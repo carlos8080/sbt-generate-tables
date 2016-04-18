@@ -1,4 +1,4 @@
-SBT Generate Tables - 3.1.1
+SBT Generate Tables - 3.2.0
 ==============================
 
 This plugin adds an **SBT** task to generate ```Tables.scala``` classes automatically, for **Typesafe Slick** usage on Scala **Play** applications.
@@ -8,7 +8,7 @@ This plugin adds an **SBT** task to generate ```Tables.scala``` classes automati
 First, add the following line in ```project/plugins.sbt``` file:
 
 ```scala
-addSbtPlugin("com.eadive" % "sbt-generate-tables" % "3.1.1")
+addSbtPlugin("com.carlossouza" % "sbt-generate-tables" % "3.2.0")
 ```
 
 ### Usage
@@ -30,6 +30,7 @@ The plugin uses ```default``` database, specified on ```conf/application.conf```
 
 Version | Changes
 --------|--------
+3.2.0 | Changing package name and organization to Carlos Souza, and upgrading to Slick 3.1.1
 3.1.1 | Changing package name and organization to Eadive
 3.1.0 | Adding generate-formats and modification to Tables.scala to accept Json formats
 3.0.1 | Bugfix on Slick driver (drop last $ dollar-sign from the driver)
